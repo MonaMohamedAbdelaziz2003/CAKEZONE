@@ -44,11 +44,13 @@ window.onscroll = function() {
         arrow.style.opacity = 0;
     }
     // count
-    if (window.scrollY > 1000 && window.scrollY < 1100) {
+    var co = 1;
+    if (window.scrollY > 1000 && window.scrollY < 1100 && co == 1) {
         animat(count1, 0, 12000, 1);
         animat(count2, 0, 12000, 1);
         animat(count3, 0, 12000, 1);
         animat(count4, 0, 12000, 1);
+        c = 0;
     }
     // else {
     //     count1.textContent = 1200;
@@ -67,13 +69,14 @@ arrow.onclick = function() {
 
 
 // ///////////////////menu
-var div1 = document.getElementById("div1_header");
 
-function xx() {
-    if (div1.style.height == "0px") {
+function xx(xx) {
+    var div1 = document.getElementById(xx);
+    if (div1.style.height === "0px") {
         div1.style.height = "auto";
         div1.classList.add("border1");
     } else {
+
         div1.style.height = "0px"
         div1.classList.remove("border1");
     }
