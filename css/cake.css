@@ -203,7 +203,7 @@
         /* start home */
         
         .home {
-            background-image: url("img/hero.jpg");
+            background-image: url("../img/hero.jpg");
             background-size: cover;
             color: white;
             padding: 100px;
